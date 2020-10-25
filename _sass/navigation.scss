@@ -1,6 +1,6 @@
 .nav-open nav {
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
-	padding: 10px 0;
+	padding: 0px 0;
 	a {
 		display: block;
 	}
@@ -16,15 +16,15 @@
 }
 
 nav {
-	font-size: 1.2em;
+	// font-size: 1.2em;
 	width: 100%;
 	font-weight: bold;
-	 margin: 0;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   -ms-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
+	margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
 	@media #{$mid-point} {
 		text-align: right;
@@ -35,8 +35,9 @@ nav {
 
 
 	a {
+		font-size: 1.2em;
 		margin: 0 3px;
-		padding: 20px 10px;
+		padding: 0px 10px;
 		border-bottom: 1px solid rgba(255,255,255,0);
 		color: #fff;
 		transition: .2s ease-in-out;
@@ -49,9 +50,9 @@ nav {
 
 		&.nav-toggle {
 			display: inline;
-			// position: absolute;
-			right: 10px;
-			top: -22px;
+			position: relative;
+			top: 50%;
+		  left: 90%;
 			font-size: 1.9em;
 			border: 0;
 
