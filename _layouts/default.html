@@ -2,6 +2,7 @@
 
 <html lang="en">
 	<head>
+		<title>Damodar Sahasrabudhe</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,7 +10,6 @@
 		{% feed_meta %}
 
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
-		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
 
 
 	</head>
@@ -20,7 +20,24 @@
 				{% include navigation.html %}
 			</div>
 		</header>
+
+		<div class="content">
+			{% for sec in site.data.sections %}
+				<section>
+					<div class="container flex">
+						<div class="text editable">
+							<h2> {{ sec.title }} <hr> </h2>
+							<body>
+								<p> {{ sec.body }} </p>
+							</body>
+						</div>
+					</div>
+				</section>
+			{% endfor %}
+		</div>
+
 		{{ content }}
+
 
 		<script>
 			document.getElementById("open-nav").onclick = function () {
