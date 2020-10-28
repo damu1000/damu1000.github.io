@@ -21,20 +21,6 @@
 			</div>
 		</header>
 
-		<div class="content">
-			{% for sec in site.data.sections %}
-				<section>
-					<div class="container flex">
-						<div class="text editable">
-							<h2> {{ sec.title }} <hr> </h2>
-							<body>
-								<p> {{ sec.body }} </p>
-							</body>
-						</div>
-					</div>
-				</section>
-			{% endfor %}
-		</div>
 
 		{{ content }}
 
