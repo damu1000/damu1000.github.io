@@ -1,0 +1,8 @@
+- title: >
+         <b>D. Sahasrabudhe</b>, M. Berzins. “Improving Performance of the Hypre Iterative Solver for Uintah Combustion Codes on Manycore Architectures Using MPI Endpoints and Kernel Consolidation,” In Computational Science -- ICCS 2020, 20th International Conference, Amsterdam, The Netherlands, June 3–5, 2020, Proceedings, Part I, Springer International Publishing, pp. 175--190. 2020. ISBN: 978-3-030-50371-0
+- title: >
+         <b>D. Sahasrabudhe</b>, M. Berzins, J. Schmidt. “Node failure resiliency for Uintah without checkpointing,” In Concurrency and Computation: Practice and Experience, pp. e5340. 2019. DOI: doi:10.1002/cpe.5340
+- title: >
+         <b>D. Sahasrabudhe</b>, E. T. Phipps, S. Rajamanickam, M. Berzins. “A Portable SIMD Primitive using Kokkos for Heterogeneous Architectures,” In Sixth Workshop on Accelerator Programming Using Directives (WACCPD), 2019.
+- title: >
+         Z. Yang, <b>D. Sahasrabudhe</b>, A. Humphrey, M. Berzins. “A Preliminary Port and Evaluation of the Uintah AMT Runtime on Sunway TaihuLight,” In 9th IEEE International Workshop on Parallel and Distributed Scientific and Engineering Computing (PDSEC 2018), IEEE, May, 2018.

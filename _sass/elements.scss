@@ -46,11 +46,17 @@ h3 {
 
 
 p, address {
-	font-size: 1.1em;
+	text-align: justify;
+	font-size: 1em;
 	color: #444;
 	margin-bottom: 20px;
 	font-weight: 300;
 	line-height: 1.4em;
+
+}
+
+b{
+	font-weight: bold;
 }
 
 hr {

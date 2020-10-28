@@ -2,17 +2,63 @@
 title: Damodar Sahasrabudhe
 description:
 ---
+<!-- Personal Info, photo etc. -->
 <div class="content">
-  {% for sec in site.data.sections %}
     <section>
       <div class="container flex">
         <div class="text editable">
-          <h2> {{ sec.title }} <hr> </h2>
+          <h2> The site is under development <hr> </h2>
           <body>
-            <p> {{ sec.body }} </p>
+            <p> Hello World </p>
           </body>
         </div>
       </div>
     </section>
-  {% endfor %}
+</div>
+
+<!-- Bio -->
+<div class="content">
+    <section>
+      <div class="container flex">
+        <div class="text editable">
+          <h2> Bio <hr> </h2>
+          <body>
+            <p>
+              I'm a <b>Graduate Research Assistant</b> at the
+              <a href="https://sci.utah.edu"> Scientific Computing and Imaging Institute</a>
+              at the <a href="https://cs.utah.edu">University of Utah</a>,
+              working with Prof. <a href="https://www.sci.utah.edu/people/mb.html">Martin Berzins</a>.
+              Before joining the Ph.D. program at Utah, I worked as a
+              <b>Software Engineer</b> at <a href="https://www.wipro.com/en-US/">Wipro Technologies</a>
+              from 2006 to 2011, and later with
+              <a href="https://www2.deloitte.com/us/en.html">Deloitte</a>
+              as a <b>Senior Analyst</b> and <b>Technical Architect</b>
+              from 2011 to 2015. I obtained a B.E. in Computer Engineering in 2006
+              at the University of Pune. My research interests cover a range of
+              areas in High Performance Computing, including massively parallel solutions for
+              complex science problems,  GPU Programming, multi-threading,
+              performance portability across modern multi-core and many core architectures,
+              performance optimizations, and resiliency.
+            </p>
+          </body>
+        </div>
+      </div>
+    </section>
+</div>
+
+<!-- Publications -->
+<!-- Add links to ISBN and DOI. Add links to pdfs, project pages and bibtex -->
+<div class="content">
+    <section>
+      <div class="container flex">
+        <div class="text editable">
+          <h2> Publications <hr> </h2>
+          <body>
+            {% for sec in site.data.publications %}
+              <p> {{ sec.title }} </p>
+            {% endfor %}
+          </body>
+        </div>
+      </div>
+    </section>
 </div>
