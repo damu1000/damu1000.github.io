@@ -1,5 +1,6 @@
 html {
 	background: #fff;
+	text-align: justify;
 }
 
 html, body {
@@ -42,17 +43,20 @@ h2 {
 
 h3 {
 	margin: 20px 0 10px 0;
+	font-weight: 600;
+	font-size: 1em;
+	margin-top: 30px;
+	line-height: 1.4em;
 }
 
 
 p, address {
-	text-align: justify;
 	font-size: 1em;
 	color: #444;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 	font-weight: 300;
 	line-height: 1.4em;
-
 }
 
 b{
@@ -61,4 +65,9 @@ b{
 
 hr {
 	margin:0 auto;
+}
+
+.icon{
+	font-size: 48px;
+	font-weight: 500;
 }

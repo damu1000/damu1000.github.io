@@ -32,11 +32,11 @@ description:
               <b>Software Engineer</b> at <a href="https://www.wipro.com/en-US/">Wipro Technologies</a>
               from 2006 to 2011, and later with
               <a href="https://www2.deloitte.com/us/en.html">Deloitte</a>
-              as a <b>Senior Analyst</b> and <b>Technical Architect</b>
+              as a <b>Technical Architect</b>
               from 2011 to 2015. I obtained a B.E. in Computer Engineering in 2006
-              at the University of Pune. My research interests cover a range of
+              at the University of Pune, India. My research interests cover a range of
               areas in High Performance Computing, including massively parallel solutions for
-              complex science problems,  GPU Programming, multi-threading,
+              complex science problems,  GPU programming, multi-threading,
               performance portability across modern multi-core and many core architectures,
               performance optimizations, and resiliency.
             </p>
@@ -45,7 +45,7 @@ description:
       </div>
     </section>
 </div>
-
+<!-- Check why is there a gap -->
 <!-- Publications -->
 <!-- Add links to ISBN and DOI. Add links to pdfs, project pages and bibtex -->
 <div class="content">
@@ -55,7 +55,12 @@ description:
           <h2> Publications <hr> </h2>
           <body>
             {% for sec in site.data.publications %}
-              <p> {{ sec.title }} </p>
+              <h3> {{ sec.title }} </h3>
+              <p>{{ sec.authors }} {{ sec.place }}</p>
+              <a href="{{ sec.link }}">
+                <i class='far fa-file-pdf'></i>
+                PDF
+              </a>
             {% endfor %}
           </body>
         </div>
