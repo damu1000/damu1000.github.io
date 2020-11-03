@@ -19,14 +19,23 @@ the descending order. So subtract page.pub from the max id to get exact location
           <p style="text-align: center; font-size: 1.3em; font-style: italic;"> {{ curpage.place }} </p>
           <br><br><br>
           <body>
-            <img src="{{ site.url }}/{{ page.image }}"
+            <!-- design image -->
+            <img src="{{ site.url }}/{{ page.image1 }}"
             style="width: auto;   margin-left: auto;  margin-right: auto; display: block;">
             <br><br>
-            <p> {{ page.imagecap }} </p>
+            <p> {{ page.image1cap }} </p>
             <br><br>
+            <!-- abstract -->
             <h2>Abstract</h2>
             <hr>
             <p> {{ page.abstract }} </p>
+            <br><br><br><br>
+            <!-- result image -->
+            <img src="{{ site.url }}/{{ page.image2 }}"
+            style="width: auto;   margin-left: auto;  margin-right: auto; display: block;">
+            <br><br>
+            <p> {{ page.image2cap }} </p>
+            <br><br>
           </body>
         </div>
       </div>

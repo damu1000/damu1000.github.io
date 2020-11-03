@@ -23,10 +23,20 @@ abstract: >
           length” (LVL). The SIMD primitive provides portability across
           CPUs and GPUs without any performance degradation being
           observed experimentally.
-image: images/simd_type.jpg
-imagecap: >
+image1: images/2_1_simd_type.jpg
+image1cap: >
         Fig 1: Figure a. shows the mapping of Kokkos' hierarchical  parallelism to OpenMP
         and CUDA without using the SIMD primitive. Figure b. shows the missing CUDA backend
         for the SIMD primitive, which does not let Kokkos use such primitives for efficient
         vectorization. This missing piece is added as part of this work.
+image2: images/2_2_simd_type.png
+image2cap: >
+        Fig 2: Fig a: The baseline is not auto-vectorized efficiently. Superlinear speedups due to
+        efficient vectorization by the SIMD primitive on Uintah's CharOx kernel. No GPU overhead.
+        Fig b: The baseline is efficiently vectorized. LVL speeds up the 2D convention kernel further
+        on CPUs and GPUs both.
+        Fig c: The baseline GEMM kernel is efficiently vectorized. No overhead on any platform.
+        Fig d: The baseline Ensemble SpMV kernel is efficiently vectorized. The SIMD primitive
+        allows better register usage on CPUs and provides a small boost. No overhead on GPUs.
+
 ---

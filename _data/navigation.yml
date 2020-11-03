@@ -1,5 +1,5 @@
-- name: Acadamics
-  link: /acadamics/
+- name: Academics
+  link: /academics/
   new_window: false
   highlight: false
 - name: Research Projects

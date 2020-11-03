@@ -1,0 +1,42 @@
+---
+layout: publication
+pub: 1
+abstract: >
+        The frequency of failures in upcoming exascale supercomputers may well
+        be greater than at present due to many-core architectures if component
+        failure rates remain unchanged. This potential increase in failure frequency
+        coupled with I/O challenges at exascale may prove problematic for current
+        resiliency approaches such as checkpoint restarting, although the use of
+        fast intermediate memory may help. Algorithm-Based Fault Tolerance (ABFT)
+        using Adaptive Mesh Refinement (AMR) is one resiliency approach used to
+        address these challenges. For adaptive mesh codes, a coarse mesh version
+        of the solution may be used to restore the fine mesh solution. This paper
+        addresses the implementation of theABFT approach within the Uintah software
+        framework: both at a software level within Uintah and in the data reconstruction
+        method used for the recovery of lost data. This method has two problems:
+        inaccuracies introduced during the reconstruction propagate forward in time,
+        and the physical consistency of variables such as positivity or boundedness
+        may be violated during interpolation. These challenges can be addressed by
+        the combination of two techniques: 1. a fault-tolerant MPI implementation
+        to recover from runtime node failures, and 2. high-order interpolation schemes
+        to preserve the physical solution and reconstruct lost data. The approach
+        considered here uses a "Limited Essentially Non-Oscillatory"(LENO) scheme
+        along with AMR to rebuild the lost data without checkpointing using Uintah.
+        Experiments were carried out using a fault-tolerant MPI - ULFM to recover from
+        runtime failure, and LENO to recover data on patches belonging to failed ranks,
+        while the simulation was continued to the end. Results show that this ABFT
+        approach is up to 10x faster than the traditional checkpointing method.
+        The new interpolation approach is more accurate than linear interpolation
+        and not subject to the overshoots found in other interpolation methods.
+image1: images/1_1_resiliancy.png
+image1cap: >
+      Fig 1: Node failures and patch recovery for MPI ranks R0, R1, R2, and R3, with
+      fine patches F0, F1, F2, and F3 and coarse patches C0, C1, C2, and C3. When
+      ranks R0 and R2 crash, the surviving ranks R1 and R3 take over, are renamed
+      to R0 and R1. The surviving ranks now interpolate missing patches F0 and F2
+      from coarse patch C0 and C2 and continue the simulation.
+image2: images/1_2_resiliancy.png
+image2cap: >
+      Fig 2: Performance comparison of the new ABFT method with the traditional checkpointing.
+      The ABFT performs up to 10x faster than the checkpointing.
+---
