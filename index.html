@@ -57,10 +57,18 @@ description:
             {% for sec in site.data.publications %}
               <h3> {{ sec.title }} </h3>
               <p>{{ sec.authors }} {{ sec.place }}</p>
+
+              <a href="{{ site.url }}/publications/{{ sec.id }}" style="margin-right: 20px">
+                <i class='far fa-file-alt' ></i>                
+                Project Page
+              </a>
+
               <a href="{{ sec.link }}">
                 <i class='far fa-file-pdf'></i>
                 PDF
               </a>
+
+
             {% endfor %}
           </body>
         </div>

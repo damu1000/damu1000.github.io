@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<!-- define variable "pub"  in the html file. The layout picks pub th entry from publications.yml-->
+
+<!-- id in publications.yml is the publication number, but entries in publications.yml are in
+the descending order. So subtract page.pub from the max id to get exact location of entry within publications.yml -->
+
+{% assign id = site.data.publications[0].id | minus: page.pub %}
+{% assign curpage = site.data.publications[id] %}
+
+<div class="content">
+    <section>
+      <div class="container flex">
+        <div class="text editable">
+          <h1>{{ curpage.title }}</h1>
+          <br>
+          <p style="text-align: center; font-size: 1.4em"> {{ curpage.authors }} </p>
+          <p style="text-align: center; font-size: 1.3em; font-style: italic;"> {{ curpage.place }} </p>
+          <br><br><br>
+          <body>
+            <img src="{{ site.url }}/{{ page.image }}"
+            style="width: auto;   margin-left: auto;  margin-right: auto; display: block;">
+            <br><br>
+            <p> {{ page.imagecap }} </p>
+            <br><br>
+            <h2>Abstract</h2>
+            <hr>
+            <p> {{ page.abstract }} </p>
+          </body>
+        </div>
+      </div>
+    </section>
+</div>

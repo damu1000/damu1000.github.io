@@ -1,5 +1,6 @@
 # Do not change the sequence of publications. It will break down project pages
-- title: Improving Performance of the Hypre Iterative Solver for Uintah Combustion Codes on Manycore Architectures
+- id:    3
+  title: Improving Performance of the Hypre Iterative Solver for Uintah Combustion Codes on Manycore Architectures
          Using MPI Endpoints and Kernel Consolidation
   authors: Sahasrabudhe, M. Berzins.
   place: >
@@ -7,18 +8,22 @@
          Proceedings, Part I, Springer International Publishing,
          pp. 175--190. 2020. ISBN: 978-3-030-50371-0 DOI: https://doi.org/10.1007/978-3-030-50371-0_13
   link:  http://www.sci.utah.edu/publications/Sah2020a/hypre.pdf
-- title: A Portable SIMD Primitive using Kokkos for Heterogeneous Architectures
+  image: none
+- id:    2
+  title: A Portable SIMD Primitive using Kokkos for Heterogeneous Architectures
   authors: D. Sahasrabudhe, E. T. Phipps, S. Rajamanickam, M. Berzins.
   place: >
          In Sixth Workshop on Accelerator Programming Using Directives (WACCPD), 2019,
          DOI: https://doi.org/10.1007/978-3-030-49943-3_7
   link:  http://www.sci.utah.edu/publications/Sah2019b/portable_simd.pdf
-- title: Node failure resiliency for Uintah without checkpointing
+- id:    1
+  title: Node failure resiliency for Uintah without checkpointing
   authors: D. Sahasrabudhe M. Berzins, J. Schmidt.
   place: >
          In Concurrency and Computation: Practice and Experience, pp. e5340. 2019. DOI:10.1002/cpe.5340
   link:  http://www.sci.utah.edu/publications/Sah2019a/00_Uintah_Resiliency.pdf
-- title: A Preliminary Port and Evaluation of the Uintah AMT Runtime on Sunway TaihuLight
+- id:    0
+  title: A Preliminary Port and Evaluation of the Uintah AMT Runtime on Sunway TaihuLight
   authors: Z. Yang, D. Sahasrabudhe, A. Humphrey, M. Berzins.
   place: >
          In 9th IEEE International Workshop on Parallel and Distributed Scientific
