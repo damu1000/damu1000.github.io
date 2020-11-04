@@ -24,14 +24,15 @@ abstract: >
         baseline GPU implementation.
 image1: images/3_1_hypre.png
 image1cap: >
-        Fig 1: Using OpenMP across cell iterators requires thousands of OpenMP thread
-        synchronizations as shown in Fig a. The synchronization overhead can not be
+        Figure 1: Using OpenMP across cell iterators requires thousands of OpenMP thread
+        synchronizations as shown in Figure a. The synchronization overhead can not be
         justified for small loops. The alternate strategy of MPI EndPoint (MPI EP), where
-        each thread (or a team of threads) acts as an MPI rank, is shown in Fig. b.
+        each thread (or a team of threads) acts as an MPI rank, is shown in Figure b.
 image2: images/3_2_hypre.png
 image2cap: >
-        Fig 2: Effect of multithreading on Uintah's RMCRT component, Hypre Solver
+        Figure 2: The effect of multithreading on Uintah's RMCRT component, Hypre Solver
         (this work) and overall simulation. The MPI EP avoids slowdowns observed in
-        the MPI Only version and improves overall simulation time.
+        the default OpenMP version of the solver (Figure b) and improves overall simulation time
+        (Figure c).
 
 ---

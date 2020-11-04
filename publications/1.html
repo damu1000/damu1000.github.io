@@ -30,13 +30,13 @@ abstract: >
         and not subject to the overshoots found in other interpolation methods.
 image1: images/1_1_resiliancy.png
 image1cap: >
-      Fig 1: Node failures and patch recovery for MPI ranks R0, R1, R2, and R3, with
+      Figure 1: Node failures and patch recovery for MPI ranks R0, R1, R2, and R3, with
       fine patches F0, F1, F2, and F3 and coarse patches C0, C1, C2, and C3. When
       ranks R0 and R2 crash, the surviving ranks R1 and R3 take over, are renamed
       to R0 and R1. The surviving ranks now interpolate missing patches F0 and F2
       from coarse patch C0 and C2 and continue the simulation.
 image2: images/1_2_resiliancy.png
 image2cap: >
-      Fig 2: Performance comparison of the new ABFT method with the traditional checkpointing.
+      Figure 2: Performance comparison of the new ABFT method with the traditional checkpointing.
       The ABFT performs up to 10x faster than the checkpointing.
 ---
