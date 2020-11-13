@@ -1,20 +1,12 @@
-- name: Academics
-  link: /academics/
-  new_window: false
-  highlight: false
-- name: Research Projects
-  link: /research_projects/
-  new_window: false
-  highlight: false
 - name: Industry Experience
   link: /industry_experience/
   new_window: false
   highlight: false
-# - name: Pricing
-#   link: /pricing/
-#   new_window: false
-#   highlight: false
-# - name: Blog
-#   link: /blog/
+- name: Academics
+  link: /academics/
+  new_window: false
+  highlight: false
+# - name: Research Projects
+#   link: /research_projects/
 #   new_window: false
 #   highlight: false
