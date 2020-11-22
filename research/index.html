@@ -1,0 +1,24 @@
+---
+title:
+description:
+layout: default
+---
+RESEARCH EXPERIENCE:
+Research Assistant at Scientific Computing and Imaging Institute, University of Utah (SLC, USA)
+      Intel Parallel Computing Center at SCI Institute (Ongoing effort)  	  	  	  	          May 2020 – To date
+•	Porting of combustion code within Uintah and preparing to run the simulation on Lassen.
+•	Working on a few more optimizations in Hypre linear solver extending the previous work.
+
+       DOE NNSA PSAAP	  	  	  	  	  	  	  	  	  	       Sept 2017 – Apr 2020
+•	Contributed to conversion of the code for Reverse Monte Carlo Ray Tracing (RMCRT) within Uintah to a version using kokkos and carried out scaling studies. Used kokkos views to get efficient memory access. Developed a kokkos functor to port multilevel RMCRT using uses AMR. Worked on vectorization of radiation ray tracing code.
+•	Improved CPU performance of Hypre (linear equations solver) up to 1.5x on Theta using MPI EndPoints and new threading model. Optimized the Cuda version of Hypre on Lassen to get performance improvement up to 1.3x.
+•	Contributed to adoption of Kokkos into Uintah to make it portable across CPUs and GPUs.
+•	Contributed to the development of a heterogeneous task scheduler that runs tasks in parallel using multiple CPU threads, each thread asynchronously launching its own cuda kernels using different cuda streams. Contributed to the scheduling logic used for automatic and asynchronous copying of data structures between host and device which can hide copying latencies and maintain data coherence. Resolved four race conditions in scheduling logic.
+
+       NSF                                                                                                                                                                    May 2016 – Apr 2017
+•	Ported Uintah to Sunway TaihuLight in collaboration with Zhang Yang, Beijing. Adapted the task scheduler for Sunway architecture. The scheduler offloads tasks to slave cores for asynchronous execution and continues processing MPI communication, reduction tasks etc. We achieved 96% parallel efficiency on Sunway.
+•	Developed a Resiliency component for Uintah to recover it from rank (or node) failure, rebuild patches for the failed rank and continue normal execution using ULFM MPI (a variation of MPI that allows fault handling even after rank crashes). Implemented different interpolation schemes to rebuild patch data using coarse values.
+•	Developed a new task scheduler for Uintah to exploit many core architectures such as KNL, using teams of std::threads that can execute multiple tasks in parallel. Prepared a version of “parallel_for” using C++11 lambda to parallelize loops among threads within a team – similar to kokkos parallel_for. Developed dynamic chunk policy within thread team to achieve load balance among threads. The scheduler demonstrated up to 4x speeds up on Stampede 2 compared to current scheduler used in Uintah.
+
+Student Research Intern at Sandia National Laboratories (Albuquerque, USA)                                       May 2017 – Aug 2017
+•	Developed a prototype for the portable SIMD primitive within Kokkos to achieve efficient vectorization on CPUs and also ensure portability across GPUs (cuda).

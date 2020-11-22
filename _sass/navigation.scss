@@ -31,7 +31,7 @@ nav {
 
 
 	a {
-		font-size: 1.2em;
+		font-size: 1em;
 		margin: 0 3px;
 		padding: 10px 10px;
 		border-bottom: 1px solid rgba(255,255,255,0);
@@ -47,8 +47,8 @@ nav {
 		&.nav-toggle {
 			display: inline;
 			position: relative;
-			top: -35px;
-		  left: 90%;
+			top: 0px;
+		  left: 0%;
 			font-size: 1.9em;
 			border: 0;
 

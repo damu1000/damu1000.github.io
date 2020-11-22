@@ -2,7 +2,7 @@
 - id:    3
   title: Improving Performance of the Hypre Iterative Solver for Uintah Combustion Codes on Manycore Architectures
          Using MPI Endpoints and Kernel Consolidation
-  authors: Sahasrabudhe, M. Berzins.
+  authors: D Sahasrabudhe, M. Berzins.
   place: >
          In Computational Science -- ICCS 2020, 20th International Conference, Amsterdam, The Netherlands, June 3–5, 2020,
          Proceedings, Part I, Springer International Publishing,

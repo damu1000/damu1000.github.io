@@ -1,0 +1,41 @@
+---
+title:
+description:
+layout: default
+---
+
+
+<!-- Publications -->
+<!--
+Steps to add new publication:
+1. Add a new entry AT THE TOP of _data/publications.yml by copying previous entry. Increment "id"
+2. Add a new page into publications/ by copying existing page. "id" in publications.yml MUST match the name of html page and "pub" in the html.
+-->
+
+<div class="content">
+    <section>
+      <div class="container flex">
+        <div class="text editable">
+          <h2> Publications <a name="Publications"></a>  <hr> </h2>
+          <body>
+            {% for sec in site.data.publications %}
+              <h3> {{ sec.title }} </h3>
+              <p>{{ sec.authors }} {{ sec.place }}</p>
+
+              <a href="{{ site.url }}/publications/{{ sec.id }}" style="margin-right: 20px">
+                <i class='far fa-file-alt' ></i>
+                Project Page
+              </a>
+
+              <a href="{{ sec.link }}">
+                <i class='far fa-file-pdf'></i>
+                PDF
+              </a>
+
+
+            {% endfor %}
+          </body>
+        </div>
+      </div>
+    </section>
+</div>

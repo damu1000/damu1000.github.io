@@ -1,12 +1,20 @@
-- name: Industry Experience
-  link: /industry_experience/
+- name: Research
+  link: /research/
+  new_window: false
+  highlight: false
+- name: Work Experience
+  link: /work_experience/
+  new_window: false
+  highlight: false
+- name: Publications
+  link: /publications/
   new_window: false
   highlight: false
 - name: Academics
   link: /academics/
   new_window: false
   highlight: false
-# - name: Research Projects
-#   link: /research_projects/
-#   new_window: false
-#   highlight: false
+- name: Fun Projects
+  link: /fun_projects/
+  new_window: false
+  highlight: false

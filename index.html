@@ -24,24 +24,18 @@ description:
           <h2> Bio <hr> </h2>
           <body>
             <p>
-              I'm a <b>Graduate Research Assistant</b> at the
+              I'm a <b>Ph.D. candidate</b>  and <b>Graduate Research Assistant</b> at the
               <a href="https://sci.utah.edu"> Scientific Computing and Imaging Institute</a>
               at the <a href="https://cs.utah.edu">University of Utah</a>,
-              working with Prof. <a href="https://www.sci.utah.edu/people/mb.html">Martin Berzins</a>.
-              Before joining the Ph.D. program at Utah in 2015, I worked for
-              <b>nine years</b> in the <b>software development industry</b>
+              working with Prof. <a href="https://www.sci.utah.edu/people/mb.html">Martin Berzins</a>
+              from 2016. I worked for
+              <b>9 years</b> in the <b>software development industry</b>
               - initially as a
               <b>Software Engineer</b> at <a href="https://www.wipro.com/en-US/">Wipro Technologies</a>
               from 2006 to 2011, and later as a <b>Technical Architect</b> with
               <a href="https://www2.deloitte.com/us/en.html">Deloitte</a>
-              from 2011 to 2015. I obtained a B.E. in Computer Engineering in 2006
-              at the University of Pune, India. My research interests cover a range of
-              areas in High Performance Computing, including utilization GPUs and
-              multi-threading for performance gains, development of efficient programming models
-              for GPU and/or multithreaded environments, massively parallel solutions for
-              the complex scientific problems, performance portability across modern
-              multi-core and many core architectures,
-              performance optimizations, asynchronous many task runtime systems, and resiliency.
+              from 2011 to 2015, before joining the Ph.D. program. I obtained a B.E. in Computer Engineering in 2006
+              at the University of Pune, India.
             </p>
           </body>
         </div>
@@ -49,98 +43,49 @@ description:
     </section>
 </div>
 
-<!-- Publications -->
-<!--
-Steps to add new publication:
-1. Add a new entry AT THE TOP of _data/publications.yml by copying previous entry. Increment "id"
-2. Add a new page into publications/ by copying existing page. "id" in publications.yml MUST match the name of html page and "pub" in the html.
--->
-
+<!-- Research Experience -->
 <div class="content">
     <section>
       <div class="container flex">
         <div class="text editable">
-          <h2> Research Publications <hr> </h2>
+          <h2> Research <a href="{{ site.url }}/research"></a> <hr> </h2>
           <body>
-            {% for sec in site.data.publications %}
-              <h3> {{ sec.title }} </h3>
-              <p>{{ sec.authors }} {{ sec.place }}</p>
-
-              <a href="{{ site.url }}/publications/{{ sec.id }}" style="margin-right: 20px">
-                <i class='far fa-file-alt' ></i>
-                Project Page
-              </a>
-
-              <a href="{{ sec.link }}">
-                <i class='far fa-file-pdf'></i>
-                PDF
-              </a>
-
-
-            {% endfor %}
+            <p>
+              My research interests cover a range of areas in High Performance Computing (HPC),
+              including utilization GPUs and
+              multi-threading for performance gains, development of efficient programming models
+              for GPU and/or multithreaded environments, massively parallel solutions for
+              the complex scientific problems, performance portability across modern
+              multi-core and many core architectures,
+              performance optimizations, asynchronous many task runtime systems, and resiliency.
+              Check the <a href="{{ site.url }}/research">Research</a> and
+              <a href="{{ site.url }}/publications">Publications</a>
+              pages for more details and source codes.
+            </p>
           </body>
         </div>
       </div>
     </section>
 </div>
 
-<!-- Industry Experience -->
+
+<!-- Work Experience -->
 <div class="content">
     <section>
       <div class="container flex">
         <div class="text editable">
-          <h2> Industry Experience <hr> </h2>
+          <h2> Work Experience <a href="{{ site.url }}/work_experience"></a>  <hr> </h2>
           <body>
             <p>
-              <b>I worked in the software development industry for nine years.</b>
+              Before joining the Ph.D. program, I <b>worked in the software development industry for 9 years</b>
+              from 2006 till 2015.
               During this time, I learned and contributed to software architecture,
               system integration, software design and development, and master data management.
               While working as a Technical Architect with Deloitte, I got more
               excited about the scalability and performance aspects of software.
               Eager to learn more about the latest technologies and to explore
               the research environment, I embarked upon my doctoral journey in August 2015.
-              Look <a href="{{ site.url }}/industry_experience">here</a> for more details!
-            </p>
-          </body>
-        </div>
-      </div>
-    </section>
-</div>
-
-<!-- Industry Experience -->
-<div class="content">
-    <section>
-      <div class="container flex">
-        <div class="text editable">
-          <h2> Academics <hr> </h2>
-          <body>
-            <p>
-              <i>"The classes are only useful to generate a paycheck for the faculty,
-                so focus on your research"</i> - Prof. Martin Berzins.
-              Nevertheless, I thoroughly enjoyed a few classes, including
-              <a href="https://www.cs.utah.edu/~hari/teaching/spring2017.html">High Performance Computing</a>,
-              <a href="https://utah.instructure.com/courses/643359">Advanced Algorithms</a>,
-              <a href="http://www.cs.utah.edu/~mhall/cs6235s12/">Parallel Programming for Many-Core Architectures</a>,
-              <a href="http://www.cs.utah.edu/~rajeev/cs6810/">Computer Architecture</a>, and
-              <a href="https://go.utah.edu/cas/login?service=https%3A%2F%2Fincommon2.sso.utah.edu%2Fidp%2FAuthn%2FExternal%3Fconversation%3De11s1&entityId=http%3A%2F%2Futah.instructure.com%2Fsaml2">Operating Systems</a>.
-              Was able to maintain cumulative <b>GPA of 3.9.</b>
-              Look <a href="{{ site.url }}/academics">here</a> for more details!
-            </p>
-          </body>
-        </div>
-      </div>
-    </section>
-</div>
-
-<!-- Hobbies -->
-<div class="content">
-    <section>
-      <div class="container flex">
-        <div class="text editable">
-          <h2> Hobbies <hr> </h2>
-          <body>
-            <p>
-              Reading history and playing flute!
+              Look <a href="{{ site.url }}/work_experience">here</a> for more details!
             </p>
           </body>
         </div>
