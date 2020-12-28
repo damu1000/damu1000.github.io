@@ -19,40 +19,34 @@ layout: default
 
 <!-- --------------------------------------------------------------------------------------------------------- -->
             <h3> AMT on 1024 GPUs <hr> </h3>
-            <p>Contributed to building a portable heterogeneous task scheduler in Uintah Asynchronous Many Task Runtime System (AMT)
+            <p>Contributed to building the heterogeneous task scheduler in Uintah Asynchronous Many Task (AMT) Runtime System
               to be used for the coal boiler simulation at exascale. Ported several tasks involved in the simulation to GPU using Kokkos.
               Solved multiple race conditions in the scheduling logic.
-              Succssfully ran the simulation on <b>512 Nvidia V100s</b> (LLNL's Lassen cluster). </p>
+              Succssfully ran the simulation on 1024 Nvidia V100s (LLNL's Lassen cluster). </p>
 
 <!-- --------------------------------------------------------------------------------------------------------- -->
             <h3> Accelerating linear equations solver using MPI End Points <hr> </h3>
-            <p>Improved CPU performance of Hypre (linear equations solver) up to <b>2.4x on 256 KNLs</b> (ANL's Bebop cluster) using
+            <p>Improved CPU performance of Hypre (linear equations solver) up to 2.4x on 256 KNLs (ANL's Bebop cluster) using
               MPI EndPoints and a new threading model.
-              Optimized the Cuda version of Hypre on Lassen to get performance improvement up to <b>1.44x on 512 Nvidia V100s</b> (LLNL's Lassen cluster).</p>
-              <a href="{{ site.url }}/publications/3" style="margin-right: 20px">
-                <i class='far fa-file-alt' ></i>
-                Project Page
+              Optimized the Cuda version of Hypre on Lassen to get performance improvement up to 1.44x on 512 Nvidia V100s (LLNL's Lassen cluster).</p>
+
+              <p> Related Publication: <a href="http://www.sci.utah.edu/publications/Sah2020a/hypre.pdf">
+                Improving Performance of the Hypre Iterative Solver for Uintah Combustion Codes on Manycore Architectures Using MPI Endpoints and Kernel Consolidation.
+              D Sahasrabudhe, M. Berzins. In Computational Science -- ICCS 2020, 20th International Conference, Amsterdam, The Netherlands
               </a>
-              <a href="http://www.sci.utah.edu/publications/Sah2020a/hypre.pdf">
-                <i class='far fa-file-pdf'></i>
-                PDF
-              </a>
+              </p>
 
 <!-- --------------------------------------------------------------------------------------------------------- -->
             <h3> Portable SIMD Primitive in Kokkos <hr> </h3>
             <p>Developed a prototype for the portable SIMD primitive within Kokkos to
               achieve efficient vectorization on CPUs and also ensure portability across GPUs (cuda).
-              The new primitive gives upto <b>7.8x speedups on Intel's Knights Landing (KNL)</b>.
+              The new primitive gives upto 7.8x speedups on Intel's Knights Landing (KNL).
             </p>
-            <a href="{{ site.url }}/publications/2" style="margin-right: 20px">
-              <i class='far fa-file-alt' ></i>
-              Project Page
+            <p> Related Publication: <a href="http://www.sci.utah.edu/publications/Sah2019b/portable_simd.pdf">
+              A Portable SIMD Primitive using Kokkos for Heterogeneous Architectures.
+              D. Sahasrabudhe, E. T. Phipps, S. Rajamanickam, M. Berzins. In Sixth Workshop on Accelerator Programming Using Directives (WACCPD), 2019, DOI: https://doi.org/10.1007/978-3-030-49943-3_7
             </a>
-            <a href="http://www.sci.utah.edu/publications/Sah2019b/portable_simd.pdf">
-              <i class='far fa-file-pdf'></i>
-              PDF
-            </a>
-
+            </p>
 
 <!-- --------------------------------------------------------------------------------------------------------- -->
             <h3> Resiliency using ULFM <hr> </h3>
@@ -60,60 +54,33 @@ layout: default
               (or node) failure, rebuild patches for the failed rank and continue normal
               execution using ULFM MPI (a variation of MPI that allows fault handling after rank crashes).
               Implemented different interpolation schemes to rebuild patch data using coarse values.
-              The new Algorithm Based Fault Tolerance (ABFT) scheme achieved <b>10x speedup on 128 nodes</b>
+              The new Algorithm Based Fault Tolerance (ABFT) scheme achieved 10x speedup on 128 nodes
               compared to traditional checkpointing.
             </p>
-            <a href="{{ site.url }}/publications/1" style="margin-right: 20px">
-              <i class='far fa-file-alt' ></i>
-              Project Page
+            <p> Related Publication: <a href="http://www.sci.utah.edu/publications/Sah2019a/00_Uintah_Resiliency.pdf">
+              Node failure resiliency for Uintah without checkpointing.
+              D. Sahasrabudhe M. Berzins, J. Schmidt. In Concurrency and Computation: Practice and Experience, pp. e5340. 2019. DOI:10.1002/cpe.5340
             </a>
-
-            <a href="http://www.sci.utah.edu/publications/Sah2019a/00_Uintah_Resiliency.pdf">
-              <i class='far fa-file-pdf'></i>
-              PDF
-            </a>
+            </p>
 
 <!-- --------------------------------------------------------------------------------------------------------- -->
-            <h3> Asynchronous Task Scheduler <hr> </h3>
+            <h3> Asynchronous Multi-threaded Task Scheduler <hr> </h3>
             <p>Contributed to porting of Uintah to Sunway TaihuLight. Adapted Uintah's task scheduler
                for the Sunway architecture. The scheduler offloads tasks to slave cores
                for asynchronous execution and continues processing MPI communication, reduction tasks etc.
-               The scheduler achieved <b>96% parallel efficiency on Sunway</b>.</p>
-
-               <a href="{{ site.url }}/publications/0" style="margin-right: 20px">
-                 <i class='far fa-file-alt' ></i>
-                 Project Page
-               </a>
-
-               <a href="http://www.sci.utah.edu/publications/Yan2018a/Uintah-Sunway.pdf">
-                 <i class='far fa-file-pdf'></i>
-                 PDF
-               </a>
+               The scheduler achieved 96% parallel efficiency on Sunway.</p>
+               <p> Related Publication: <a href="http://www.sci.utah.edu/publications/Yan2018a/Uintah-Sunway.pdf">
+                 A Preliminary Port and Evaluation of the Uintah AMT Runtime on Sunway TaihuLight.
+                 Z. Yang, D. Sahasrabudhe, A. Humphrey, M. Berzins. In 9th IEEE International Workshop on Parallel and Distributed Scientific and Engineering Computing (PDSEC 2018), IEEE, May, 2018.                </a>
+               </p>
 
 <!-- --------------------------------------------------------------------------------------------------------- -->
-            <h3> Temp <hr> </h3>
-            <p>
-              RESEARCH EXPERIENCE:
-              Research Assistant at Scientific Computing and Imaging Institute, University of Utah (SLC, USA)
-                    Intel Parallel Computing Center at SCI Institute (Ongoing effort)  	  	  	  	          May 2020 – To date
-              •	Porting of combustion code within Uintah and preparing to run the simulation on Lassen.
-              •	Working on a few more optimizations in Hypre linear solver extending the previous work.
+            <br><br><br>
+            <p>Acknowledgement</p>
+            <p>I am very much thankful to DOE NNSA PSAAP-II program, Intel Parallel Computing Center at SCI Institute,
+            National Science Foundation, and Sandia National Laboratories for supporting the research.</p>
 
-                     DOE NNSA PSAAP	  	  	  	  	  	  	  	  	  	       Sept 2017 – Apr 2020
-              •	Contributed to conversion of the code for Reverse Monte Carlo Ray Tracing (RMCRT) within Uintah to a version using kokkos and carried out scaling studies. Used kokkos views to get efficient memory access. Developed a kokkos functor to port multilevel RMCRT using uses AMR. Worked on vectorization of radiation ray tracing code.
-              •	Improved CPU performance of Hypre (linear equations solver) up to 1.5x on Theta using MPI EndPoints and new threading model. Optimized the Cuda version of Hypre on Lassen to get performance improvement up to 1.3x.
-              •	Contributed to adoption of Kokkos into Uintah to make it portable across CPUs and GPUs.
-              •	Contributed to the development of a heterogeneous task scheduler that runs tasks in parallel using multiple CPU threads, each thread asynchronously launching its own cuda kernels using different cuda streams. Contributed to the scheduling logic used for automatic and asynchronous copying of data structures between host and device which can hide copying latencies and maintain data coherence. Resolved four race conditions in scheduling logic.
 
-                     NSF                                                                                                                                                                    May 2016 – Apr 2017
-              •	Ported Uintah to Sunway TaihuLight in collaboration with Zhang Yang, Beijing. Adapted the task scheduler for Sunway architecture. The scheduler offloads tasks to slave cores for asynchronous execution and continues processing MPI communication, reduction tasks etc. We achieved 96% parallel efficiency on Sunway.
-              •	Developed a Resiliency component for Uintah to recover it from rank (or node) failure, rebuild patches for the failed rank and continue normal execution using ULFM MPI (a variation of MPI that allows fault handling even after rank crashes). Implemented different interpolation schemes to rebuild patch data using coarse values.
-              •	Developed a new task scheduler for Uintah to exploit many core architectures such as KNL, using teams of std::threads that can execute multiple tasks in parallel. Prepared a version of “parallel_for” using C++11 lambda to parallelize loops among threads within a team – similar to kokkos parallel_for. Developed dynamic chunk policy within thread team to achieve load balance among threads. The scheduler demonstrated up to 4x speeds up on Stampede 2 compared to current scheduler used in Uintah.
-
-              Student Research Intern at Sandia National Laboratories (Albuquerque, USA)                                       May 2017 – Aug 2017
-              •	Developed a prototype for the portable SIMD primitive within Kokkos to achieve efficient vectorization on CPUs and also ensure portability across GPUs (cuda).
-
-            </p>
           </body>
         </div>
       </div>
