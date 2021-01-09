@@ -1,4 +1,10 @@
 # Do not change the sequence of publications. It will break down project pages
+- id:    4
+  title: Optimizing the Hypre solver for manycore and GPU architectures
+  authors: D. Sahasrabudhe, R. Zambre, A. Chandramowlishwaran, M. Berzins.
+  place: >
+         In Journal of Computational Science, Springer International Publishing, pp. 101279. 2020. DOI: https://doi.org/10.1016/j.jocs.2020.101279
+  link:  http://www.sci.utah.edu/publications/Sah2020b/00_main.pdf
 - id:    3
   title: Improving Performance of the Hypre Iterative Solver for Uintah Combustion Codes on Manycore Architectures
          Using MPI Endpoints and Kernel Consolidation
@@ -8,7 +14,6 @@
          Proceedings, Part I, Springer International Publishing,
          pp. 175--190. 2020. ISBN: 978-3-030-50371-0 DOI: https://doi.org/10.1007/978-3-030-50371-0_13
   link:  http://www.sci.utah.edu/publications/Sah2020a/hypre.pdf
-  image: none
 - id:    2
   title: A Portable SIMD Primitive using Kokkos for Heterogeneous Architectures
   authors: D. Sahasrabudhe, E. T. Phipps, S. Rajamanickam, M. Berzins.
